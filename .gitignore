@@ -1,0 +1,9 @@
+# LaTeX build files (PDFs are kept so they display on GitHub)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)

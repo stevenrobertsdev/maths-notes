@@ -1,0 +1,177 @@
+% !TEX root = ../../M_1.tex
+\subsection{Surds and indices}
+
+Working with roots, powers of numbers, and algebraic expressions.
+
+\subsubsection{Square, cube and higher roots}
+
+\defn{Square root}{
+  A \textbf{square root} of a number is a number that, when raised to the power of $2$, gives the original number. For example, $5$ and $-5$ are square roots of $25$ because $5^2 = 25$ and $(-5)^2 = 25$.
+}
+
+\defn{Cube root}{
+  A \textbf{cube root} of a number is a number that, when raised to the power of $3$, gives the original number. For example, $3$ is a cube root of $27$ because $3^3 = 27$.
+}
+
+Fourth roots, fifth roots, and so on can be defined in a similar way. The $n$th root of a number $x$ is a number $y$ such that $y^n = x$.
+
+\defn{Negative numbers}{
+  Negative numbers do not have real square roots. For example, there is no real number $x$ such that $x^2 = -4$. However, negative numbers \textbf{do have real cube roots}. For example, $-3$ is a cube root of $-27$ because $(-3)^3 = -27$.
+}
+
+For all \textbf{even roots}, the root of a negative number is not a real number. For all \textbf{odd roots}, the root of a negative number is a negative number.
+
+You can use the $\pm$ symbol to indicate that a number has two roots. For example, the square roots of $16$ are $\pm 4$, which means that both $4$ and $-4$ are square roots of $16$.
+
+\prop{Using $\pm$ and $\sqrt{x}$}{
+  Because $\sqrt{x}$ is used to denote a positive square root, we can write $\sqrt{16} = 4$. To indicate both roots, we can use $\pm$; for example, if $x^2 = 36$ then $x = \pm \sqrt{36} = \pm 6$.
+}
+
+The number to the upper left of the root symbol denotes the $n$th root. For example, $\sqrt[3]{64} = 4$ because $4^3 = 64$. The cube root of $-64$ is $-4$ because $(-4)^3 = -64$.
+
+Most square roots are irrational numbers. For example, $\sqrt{3}$ is an irrational number because it cannot be expressed as a fraction of two integers. However, some square roots are rational numbers, such as $\sqrt{9} = 3$. \textbf{They are often just left in root form, such as $\sqrt{3}$, because they cannot be simplified.}
+
+\defn{Surds}{
+  An expression such as $3 + \sqrt{7}$ is called a \textbf{surd}. A surd is an expression that contains a root that cannot be simplified to remove the root. For example, $\sqrt{3}$ is a surd because it cannot be simplified to remove the square root. However, $\sqrt{9}$ is not a surd because it can be simplified to $3$.
+}
+
+Some common surds:
+
+\[ \sqrt{2} \qquad \sqrt{3} \qquad \sqrt{5} \qquad \sqrt{7} \qquad \sqrt{11} \qquad \sqrt{13} \]
+
+\subsubsection{Surd arithmetic}
+
+You can manipulate surds using the normal rules of algebra and treat them the same way you would a variable, for example when collecting like terms.
+
+Such as:
+
+\[
+  2\sqrt{5} - \sqrt{2} + 3\sqrt{5} + 4\sqrt{2} = (2 + 3)\sqrt{5} + (-1 + 4)\sqrt{2} = 5\sqrt{5} + 3\sqrt{2}
+\]
+
+\defn{Square root}{
+  The \textbf{square root} $\sqrt{a}$ of a non-negative number $a$ is the non-negative number that gives $a$ when it is squared.
+}
+
+This definition is the whole reason the next rule works. Squaring and square-rooting undo each other, in the same way that multiplying by $2$ and dividing by $2$ undo each other.
+
+\prop{Squaring a square root}{
+  For any non-negative number $a$,
+  \[ \sqrt{a} \times \sqrt{a} = \left(\sqrt{a}\right)^{2} = a. \]
+  Multiplying a square root by itself removes the root.
+}
+
+A surd behaves like a variable, except at this step. For a variable, $x \times x = x^{2}$ and there is nothing more to do. For a surd, $\sqrt{6} \times \sqrt{6} = \left(\sqrt{6}\right)^{2}$ collapses to the whole number $6$.
+
+\wex{a root multiplied by itself}{
+  \begin{parts}
+    \item Directly from the rule:
+      \[ \sqrt{6} \times \sqrt{6} = 6, \qquad \left(\sqrt{11}\right)^{2} = 11. \]
+      As a check, $\sqrt{6} \approx 2.449$ and $2.449 \times 2.449 \approx 6$.
+    \item With a coefficient, multiply the numbers and the roots separately:
+      \[ 5\sqrt{3} \times \sqrt{3} = 5 \times \left(\sqrt{3}\right)^{2} = 5 \times 3 = 15. \]
+    \item When the whole term is squared, both the number and the root are squared:
+      \[ \left(3\sqrt{5}\right)^{2} = 3^{2} \times \left(\sqrt{5}\right)^{2} = 9 \times 5 = 45. \]
+    \item Inside a longer expression, the rule applies term by term:
+      \[ \sqrt{2}\left(\sqrt{2} - 3\right) = \left(\sqrt{2}\right)^{2} - 3\sqrt{2} = 2 - 3\sqrt{2}. \]
+    \item The rule is what removes a root from a denominator. Multiplying the top and bottom by $\sqrt{3}$ does not change the value:
+      \[ \frac{1}{\sqrt{3}} = \frac{1 \times \sqrt{3}}{\sqrt{3} \times \sqrt{3}} = \frac{\sqrt{3}}{3}. \]
+  \end{parts}
+}
+
+Some additional rules for manipulating surds:
+
+\prop{Roots of products and quotients}{
+  For non-negative numbers $a$ and $b$ (with $b \neq 0$ for the quotient),
+  \[ \sqrt{ab} = \sqrt{a}\sqrt{b}, \qquad \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}. \]
+  The same rules hold for cube roots, fourth roots and so on.
+}
+
+The product rule follows from $\left(\sqrt{a}\right)^{2} = a$. Squaring $\sqrt{a}\sqrt{b}$ gives
+\[ \left(\sqrt{a}\sqrt{b}\right)^{2} = \left(\sqrt{a}\right)^{2}\left(\sqrt{b}\right)^{2} = ab. \]
+So $\sqrt{a}\sqrt{b}$ is a non-negative number whose square is $ab$, which is exactly what $\sqrt{ab}$ means.
+
+\wex{combining and splitting roots}{
+  \begin{parts}
+    \item Combining two roots into one can give a whole number:
+      \[ \sqrt{3}\sqrt{12} = \sqrt{3 \times 12} = \sqrt{36} = 6. \]
+    \item The quotient rule works in the same way:
+      \[ \frac{\sqrt{50}}{\sqrt{2}} = \sqrt{\frac{50}{2}} = \sqrt{25} = 5. \]
+    \item Splitting a fraction under a root:
+      \[ \sqrt{\frac{16}{25}} = \frac{\sqrt{16}}{\sqrt{25}} = \frac{4}{5}. \]
+    \item Cube roots follow the same pattern:
+      \[ \sqrt[3]{3}\,\sqrt[3]{9} = \sqrt[3]{3 \times 9} = \sqrt[3]{27} = 3. \]
+    \item Used in reverse, the product rule simplifies a surd. Split the number into a product where one factor is a perfect square:
+      \[ \sqrt{45} = \sqrt{9 \times 5} = \sqrt{9}\sqrt{5} = 3\sqrt{5}. \]
+  \end{parts}
+}
+
+The rule does not work for addition: $\sqrt{a + b} \neq \sqrt{a} + \sqrt{b}$. For example:
+\[ \sqrt{36 + 64} = \sqrt{100} = 10, \quad \text{but} \quad \sqrt{36} + \sqrt{64} = 6 + 8 = 14. \]
+
+Another way to simplify surds applies if the number inside the square root sign has a factor that is a perfect square. For example, $\sqrt{72}$ can be simplified because $72 = 36 \times 2$ and $36$ is a perfect square. This is due to the fact that:
+
+\[
+\sqrt{ab} = \sqrt{a}\sqrt{b}
+\]
+
+\wex{pulling out square factors}{
+  Consider the following surds: $\sqrt{80}$ and $\sqrt{15}$.
+  \begin{parts}
+    \item $80$ has a factor of $16$, which is a perfect square. So we can write:
+      \[ \sqrt{80} = \sqrt{16 \times 5} = \sqrt{16}\sqrt{5} = 4\sqrt{5}. \]
+    \item $15$ has no factors that are perfect squares (other than $1$), so it cannot be simplified. So we write:
+      \[ \sqrt{15} = \sqrt{15}. \] As it can't be simplified, it is left in root form.
+  \end{parts}
+}
+
+When simplifying a surd, look for the largest perfect square that is a factor of the number under the root. The first 15 perfect squares are
+\[ 1,\ 4,\ 9,\ 16,\ 25,\ 36,\ 49,\ 64,\ 81,\ 100,\ 121,\ 144,\ 169,\ 196,\ 225. \]
+
+\defn{Rationalising the denominator}{
+  Rewriting a fraction so that its denominator no longer contains an irrational root is called \textbf{rationalising} the denominator. It is done by multiplying the top and bottom of the fraction by a suitable surd, which does not change the value of the fraction.
+}
+
+When the denominator is a single root, multiply the top and bottom by that root. The rule $\left(\sqrt{a}\right)^{2} = a$ then removes the root from the denominator:
+\[ \frac{1}{\sqrt{5}} = \frac{1}{\sqrt{5}} \times \frac{\sqrt{5}}{\sqrt{5}} = \frac{\sqrt{5}}{5}. \]
+
+\defn{Conjugate}{
+  A \textbf{conjugate} of a two-term expression is the expression obtained by changing the sign of one of its terms, usually the second. For example, a conjugate of $2\sqrt{3} + \sqrt{5}$ is $2\sqrt{3} - \sqrt{5}$, and a conjugate of $5 - 3\sqrt{2}$ is $5 + 3\sqrt{2}$.
+}
+
+\prop{Strategy for rationalising the denominator}{
+  \begin{itemize}[topsep=2pt, itemsep=2pt]
+    \item If the denominator is a single term containing $\sqrt{a}$, multiply the top and bottom by $\sqrt{a}$.
+    \item If the denominator has two terms involving square roots, multiply the top and bottom by a conjugate of the denominator.
+  \end{itemize}
+}
+
+The conjugate works because the new denominator has the form $(A + B)(A - B)$, which is the difference of two squares $A^{2} - B^{2}$. Squaring each term removes its square root.
+
+\wex{clearing roots from a denominator}{
+  \begin{parts}
+    \item Only the $\sqrt{5}$ needs removing, so multiply by $\sqrt{5}$:
+      \[ \frac{2}{7\sqrt{5}} = \frac{2}{7\sqrt{5}} \times \frac{\sqrt{5}}{\sqrt{5}} = \frac{2\sqrt{5}}{7 \times 5} = \frac{2\sqrt{5}}{35}. \]
+    \item A conjugate of $5 - 3\sqrt{2}$ is $5 + 3\sqrt{2}$:
+      \begin{align*}
+        \frac{\sqrt{3}}{5 - 3\sqrt{2}}
+          &= \frac{\sqrt{3}}{5 - 3\sqrt{2}} \times \frac{5 + 3\sqrt{2}}{5 + 3\sqrt{2}}
+           = \frac{5\sqrt{3} + 3\sqrt{2}\sqrt{3}}{5^{2} - \left(3\sqrt{2}\right)^{2}} \\[4pt]
+          &= \frac{5\sqrt{3} + 3\sqrt{6}}{25 - 9 \times 2}
+           = \frac{5\sqrt{3} + 3\sqrt{6}}{7}
+      \end{align*}
+  \end{parts}
+}
+
+A final answer that is a surd should be simplified as far as possible. Rationalising the denominator is not always required, so leaving $1/\sqrt{5}$ as it is is acceptable. Many calculators rationalise automatically and display $1/\sqrt{5}$ as $\sqrt{5}/5$.
+
+\subsubsection{Powers and the index laws}
+
+\defn{Base and index}{
+  In $3^{4} = 3 \times 3 \times 3 \times 3 = 81$, the number $3$ is the \textbf{base} and $4$ is the \textbf{power}, \textbf{index} or \textbf{exponent}. The plural of index is \textbf{indices}. The result, $81$, is also called a power of $3$.
+}
+
+\prop{Index laws for a single base}{
+  \[ a^{m}a^{n} = a^{m + n}, \qquad \frac{a^{m}}{a^{n}} = a^{m - n}, \qquad \left(a^{m}\right)^{n} = a^{mn}. \]
+  The first law extends to more than two powers, for example $a^{m}a^{n}a^{r} = a^{m + n + r}$.
+}

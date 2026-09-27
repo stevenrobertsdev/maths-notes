@@ -1,0 +1,190 @@
+% !TEX root = ../../M_1.tex
+\subsection{Factorising and fractions}
+
+Algebraic expressions have factors and multiples in the same way that integers do. For example,
+\[ xy^{2} = y \times xy \]
+shows that $y$ and $xy$ are both factors of $xy^{2}$, and that $xy^{2}$ is a multiple of both $y$ and $xy$. Every expression is a factor and a multiple of itself, since $xy^{2} = 1 \times xy^{2}$.
+
+Two or more expressions can also share common factors and common multiples. For example, $y$ is a common factor of $xy^{2}$ and $y^{3}z$, and $pqr$ is a common multiple of $pq$ and $qr$ because
+\[ pqr = pq \times r \quad \text{and} \quad pqr = qr \times p. \]
+
+To show that an expression is a common factor, write each expression as that factor multiplied by something. For example, $4w$ is a common factor of $12w^{3}$, $8w^{2}$ and $4w$ because
+\[ 12w^{3} = 4w \times 3w^{2}, \qquad 8w^{2} = 4w \times 2w, \qquad 4w = 4w \times 1. \]
+
+\subsubsection{Finding the HCF and LCM of expressions}
+
+\defn{HCF and LCM}{
+  Expressions with integer coefficients have an HCF and an LCM, just as integers do. The \textbf{HCF} is a common factor that is a multiple of every other common factor. The \textbf{LCM} is a common multiple that is a factor of every other common multiple.
+}
+
+\wex{HCF and LCM of $12p^{3}q^{2}$ and $8p^{5}$}{
+  \textbf{HCF.} Work through each part of the expressions in turn.
+  The largest integer that is a factor of both $12$ and $8$ is $4$.
+  The largest power of $p$ that is a factor of both $p^{3}$ and $p^{5}$ is $p^{3}$, since
+  \[ p^{3} = p^{3} \times 1 \quad \text{and} \quad p^{5} = p^{3} \times p^{2}. \]
+  There is no $q$ in $8p^{5}$, so the HCF contains no power of $q$. The HCF is $4p^{3}$, and
+  \[ 12p^{3}q^{2} = 4p^{3} \times 3q^{2}, \qquad 8p^{5} = 4p^{3} \times 2p^{2}. \]
+
+  \textbf{LCM.} The smallest positive integer that is a multiple of both $12$ and $8$ is $24$.
+  The smallest power of $p$ that is a multiple of both $p^{3}$ and $p^{5}$ is $p^{5}$.
+  The smallest power of $q$ that is a multiple of both $q^{2}$ and no power of $q$ is $q^{2}$.
+  The LCM is $24p^{5}q^{2}$, and
+  \[ 24p^{5}q^{2} = 12p^{3}q^{2} \times 2p^{2}, \qquad 24p^{5}q^{2} = 8p^{5} \times 3q^{2}. \]
+}
+
+\subsubsection{Factorising by extracting a common factor}
+
+\defn{Factorising}{
+  To \textbf{factorise} an expression means to write it as a product of two or more expressions, usually none of which is $1$ or $-1$.
+}
+
+For example, the terms of $a^{2}b^{3} - ab$ have $ab$ as a common factor, so
+\begin{align*}
+  a^{2}b^{3} - ab &= ab \times ab^{2} - ab \times 1 \\
+                  &= ab(ab^{2} - 1).
+\end{align*}
+
+\prop{Strategy for factorising an expression}{
+  \begin{enumerate}[topsep=2pt, itemsep=2pt]
+    \item Find the common factor of the terms (the HCF).
+    \item Write the common factor in front of a pair of brackets.
+    \item Write what is left of each term inside the brackets.
+  \end{enumerate}
+}
+
+\paragraph{Taking out a negative factor.}
+Sometimes it is convenient to take out the common factor with a minus sign. For example,
+\[ -6k^{4} + 9k^{2}m - 3k^{2} = -3k^{2}(2k^{2} - 3m + 1). \]
+Taking out a minus sign reverses the sign of every term inside the brackets, as in
+\[ -x + y - z = -(x - y + z). \]
+
+\paragraph{Factorising with fractional coefficients.}
+If the coefficients of the terms are not integers, the expression can still be factorised. When the coefficients are fractions, the denominator of the fraction taken out is typically a common multiple of the denominators of the coefficients.
+
+\wex{extracting a fractional factor}{
+  \[ \frac{3}{4}t^{2} + \frac{1}{2}t - 2 = \frac{1}{4}\left(3t^{2} + 2t - 8\right) \]
+  Here $4$ is a common multiple of the denominators $4$ and $2$. Multiplying back out confirms each term:
+  \[ \frac{1}{4} \times 3 = \frac{3}{4}, \qquad
+     \frac{1}{4} \times 2 = \frac{2}{4} = \frac{1}{2}, \qquad
+     \frac{1}{4} \times (-8) = -\frac{8}{4} = -2. \]
+}
+
+\prop{Common factor of fractions}{
+  The common factor of fractional coefficients is
+  \[ \frac{\text{HCF of the numerators}}{\text{LCM of the denominators}}. \]
+  For example, for $\frac{4}{5}$ and $\frac{2}{3}$ this is $\dfrac{\text{HCF}(4, 2)}{\text{LCM}(5, 3)} = \dfrac{2}{15}$.
+}
+
+Sometimes the expression in the brackets has further factors that can be taken out.
+
+\subsubsection{Reducing algebraic fractions to lowest terms}
+
+A numerical fraction is simplified by dividing its numerator and denominator by a common factor:
+\[ \frac{6}{9} = \frac{\overset{2}{\cancel{6}}}{\underset{3}{\cancel{9}}} = \frac{2}{3}. \]
+The same can be done for algebraic fractions. For example, $b$ is a common factor of $b^{4}$ and $ab$, so
+\[ \frac{b^{4}}{ab} = \frac{\overset{b^{3}}{\cancel{b^{4}}}}{a\,\underset{1}{\cancel{b}}} = \frac{b^{3}}{a}. \]
+
+\defn{Cancelling}{
+  Dividing the numerator and denominator of a fraction by a common factor is called \textbf{cancelling}, or \textbf{cancelling down}.
+}
+
+\wex{dividing top and bottom by the HCF}{
+  Find the HCF of the numerator and denominator, then divide both by it.
+  \begin{parts}
+    \item The HCF of $10m^{3}n$ and $15mn^{2}$ is $5mn$, so
+      \[ \frac{10m^{3}n}{15mn^{2}} = \frac{2m^{2}}{3n}. \]
+    \item The HCF of $y^{2}(y - 3)^{2}$ and $y^{4}(y - 3)$ is $y^{2}(y - 3)$, so
+      \[ \frac{y^{2}(y - 3)^{2}}{y^{4}(y - 3)} = \frac{y - 3}{y^{2}}. \]
+  \end{parts}
+}
+
+In some cases there won't be any obvious common factors. Factorising the numerator and denominator can then create some.
+
+\wex{factorising first to reveal a common factor}{
+  \begin{parts}
+    \item Factorising gives $a$ as a common factor:
+      \[ \frac{3a^{2} - a}{a^{3} + 4a} = \frac{a(3a - 1)}{a(a^{2} + 4)} = \frac{3a - 1}{a^{2} + 4}. \]
+    \item Factorising gives $v + 3$ as a common factor:
+      \[ \frac{4v + 12}{v^{2} + 3v} = \frac{4(v + 3)}{v(v + 3)} = \frac{4}{v}. \]
+  \end{parts}
+}
+
+\subsubsection{Sums and differences of algebraic fractions}
+
+With numerical fractions, the denominators need to be the same before the fractions can be added or subtracted. The same method can be used for algebraic fractions.
+
+\prop{Adding and subtracting fractions}{
+  \begin{enumerate}[topsep=2pt, itemsep=2pt]
+    \item Make sure the fractions have the same denominator, rewriting them as equivalent fractions if needed.
+    \item Add or subtract the numerators.
+    \item Simplify if possible.
+  \end{enumerate}
+}
+
+\wex{finding a common denominator}{
+  \begin{parts}
+    \item The denominators are already the same:
+      \[ \frac{2y + 5}{y^{3}} - \frac{5}{y^{3}} = \frac{2y}{y^{3}} = \frac{2}{y^{2}}. \]
+    \item Multiplying the top and bottom of the second and third fractions makes every denominator $pq$:
+      \[ \frac{3}{pq} - \frac{1}{p} + \frac{4}{q} = \frac{3}{pq} - \frac{q}{pq} + \frac{4p}{pq} = \frac{3 - q + 4p}{pq}. \]
+    \item Here the two denominators are multiplied by different things to make them the same, and each numerator is multiplied by the same term as its own denominator:
+      \begin{align*}
+        \frac{t}{t + 2} - \frac{3}{t}
+          &= \frac{t^{2}}{t(t + 2)} - \frac{3(t + 2)}{t(t + 2)} \\
+          &= \frac{t^{2} - 3(t + 2)}{t(t + 2)} = \frac{t^{2} - 3t - 6}{t(t + 2)}.
+      \end{align*}
+    \item A whole term can be written over $1$, then multiplied top and bottom by $m$ to match the other denominator:
+      \[ k - \frac{2}{m} = \frac{k}{1} - \frac{2}{m} = \frac{km}{m} - \frac{2}{m} = \frac{km - 2}{m}. \]
+  \end{parts}
+}
+
+\subsubsection{Splitting a fraction into separate terms}
+
+When an expression is a sum of several terms, dividing it by a second expression is the same as dividing each term of the first expression by the second. For example,
+
+\[ \frac{3a^{3} + b - 4}{a} = \frac{3a^{3}}{a} + \frac{b}{a} - \frac{4}{a} = 3a^{2} + \frac{b}{a} - \frac{4}{a} \]
+
+This is called \textbf{expanding} the fraction and is essentially the reverse procedure to adding or subtracting fractions shown above.
+
+Algebraic fractions can only be expanded if there is a sum of terms in the \textbf{numerator}. The following fraction can't be expanded.
+
+\[
+  \frac{a}{3a^{3} + b - 4}
+\]
+
+\subsubsection{Products and quotients of algebraic fractions}
+
+Algebraic fractions can be multiplied and divided in the same way as numerical fractions. For example:
+
+\[
+  \frac{4a}{3b} \times \frac{6b^{3}}{5a^{2}} = \frac{4a \times 6b^{3}}{3b \times 5a^{2}} = \frac{24ab^{3}}{15a^{2}b} = \frac{8b^{2}}{5a}
+\]
+
+Dividing algebraic fractions is done by multiplying the first fraction by the \textbf{reciprocal} of the second. For example:
+
+\[
+  \frac{4a}{3b} \div \frac{6b^{3}}{5a^{2}} = \frac{4a}{3b} \times \frac{5a^{2}}{6b^{3}} = \frac{4a \times 5a^{2}}{3b \times 6b^{3}} = \frac{20a^{3}}{18b^{4}} = \frac{10a^{3}}{9b^{4}}
+\]
+
+\defn{Cross cancelling}{
+  When multiplying or dividing fractions, any common factors in the numerator and denominator can be cancelled before multiplying or dividing. This is called \textbf{cross cancelling}.
+}
+
+An example of cross cancelling is shown below:
+
+\wex{cancelling before multiplying}{
+  \begin{parts}
+    \item Cancel a factor of $y + 3$ before multiplying:
+      \[ \frac{y + 3}{5} \times \frac{y - 2}{(y + 3)^{3}}
+         = \frac{\overset{1}{\cancel{y + 3}}}{5} \times \frac{y - 2}{\underset{(y + 3)^{2}}{\cancel{(y + 3)^{3}}}}
+         = \frac{y - 2}{5(y + 3)^{2}}. \]
+    \item Multiply by the reciprocal, then cancel before multiplying:
+      \begin{align*}
+        \frac{8M^{5}}{N^{2}} \div \frac{2M^{2}}{N^{6}}
+          &= \frac{8M^{5}}{N^{2}} \times \frac{N^{6}}{2M^{2}} \\[4pt]
+          &= \frac{\overset{4}{\cancel{8}}\,\overset{M^{3}}{\cancel{M^{5}}}}{\underset{1}{\cancel{N^{2}}}}
+             \times \frac{\overset{N^{4}}{\cancel{N^{6}}}}{\underset{1}{\cancel{2}}\,\underset{1}{\cancel{M^{2}}}}
+           = 4M^{3}N^{4}.
+      \end{align*}
+  \end{parts}
+}

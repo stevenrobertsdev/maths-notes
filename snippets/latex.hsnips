@@ -1,0 +1,85 @@
+# ---------- Maths mode ----------
+snippet mk "inline maths" wA
+\$$1\$ $0
+endsnippet
+
+snippet dm "display maths" wA
+\[
+	$1
+\] $0
+endsnippet
+
+snippet ali "align* block" bA
+\begin{align*}
+	$1
+\end{align*}
+$0
+endsnippet
+
+# ---------- Symbols ----------
+snippet => "implies" wA
+\implies
+endsnippet
+
+snippet iff "iff" wA
+\iff
+endsnippet
+
+snippet vv "vector" wA
+\vec{$1}$0
+endsnippet
+
+snippet sL "space of linear maps" wA
+\sL($1, $2)$0
+endsnippet
+
+# ---------- Note blocks ----------
+snippet prop "proposition" bA
+\prop{$1}{
+	$2
+}
+$0
+endsnippet
+
+snippet thm "theorem" bA
+\thm{$1}{
+	$2
+}
+$0
+endsnippet
+
+snippet defn "definition" bA
+\defn{$1}{
+	$2
+}
+$0
+endsnippet
+
+snippet nt "note box" bA
+\nt{
+	$1
+}
+$0
+endsnippet
+
+snippet pf "proof" bA
+\pf{Proof of $1}{
+	$2
+}
+$0
+endsnippet
+
+snippet wex "worked example" bA
+\wex{$1}{
+	$2
+}
+$0
+endsnippet
+
+# Type newsec at the top of a new section file
+snippet newsec "new section file" b
+% !TEX root = ../../M_1.tex
+\subsection{$1}
+
+$0
+endsnippet

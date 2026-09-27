@@ -1,0 +1,219 @@
+% !TEX root = ../../M_1.tex
+\subsection{Expressions and brackets}
+
+\subsubsection{The language of algebra}
+
+\defn{Expression}{
+  An \textbf{expression} is an arrangement of letters and numbers joined by mathematical symbols, such that substituting numbers for any letters gives a value that can be worked out. For example, $5y - 2$ is an expression, but $5y - \times 2$ is not.
+}
+
+An expression containing letters is an \textbf{algebraic expression}. One containing only numbers and symbols, such as $7 + 3 \times 2$, is a \textbf{numerical expression}. A \textbf{subexpression} is part of a larger expression that can be enclosed in brackets without changing its meaning. For example, $5y$ is a subexpression of $5y - 2$, but $y - 2$ is not, since $5(y - 2)$ means something different.
+
+\defn{Types of letter}{
+  A \textbf{variable} represents any number, or any number of a particular kind, such as any positive number or any integer. An \textbf{unknown} represents a particular number that is not known, usually to be found by solving an equation. A \textbf{constant} is a particular number whose value is specified, or fixed for a calculation, such as $\pi \approx 3.14$.
+}
+
+In practice all letters that represent numbers are treated in the same way, and ``variable'' is often used for both variables and unknowns.
+
+Multiplication signs are usually omitted unless they sit between two numbers, so $7 \times t$ is written $7t$. Division is written as a fraction, so $7 \div t$ is written $\dfrac{7}{t}$, or $7/t$ within a line of text.
+
+\defn{Equation}{
+  Expressions do not contain equals signs. An \textbf{equation} is made up of two expressions with an equals sign between them, such as $4y - y = 3y$.
+}
+
+An expression made of quantities that are added or subtracted is best thought of as quantities that are all added. For example,
+\[ 4pq - 3q^{2} + 7p + 2\sqrt{q} - 9 = 4pq + (-3q^{2}) + 7p + 2\sqrt{q} + (-9). \]
+
+\defn{Terms and coefficients}{
+  The quantities that are added are the \textbf{terms} of the expression. A term with no variables is a \textbf{constant term}. If a term has the form (fixed value) $\times$ (combination of variables), the fixed value is the \textbf{coefficient} of the term, and the term is a term \emph{in} that combination of variables.
+}
+
+In the expression above, $4pq$ has coefficient $4$ and is a term in $pq$, $-3q^{2}$ has coefficient $-3$ and is a term in $q^{2}$, $2\sqrt{q}$ has coefficient $2$ and is a term in $\sqrt{q}$, and $-9$ is a constant term.
+
+A coefficient can be $1$ or $-1$: the terms of $y - y^{3}$ have coefficients $1$ and $-1$. A coefficient can also include constants: in $5r^{2} - 2\pi r^{2}$, the second term is a term in $r^{2}$ with coefficient $-2\pi$.
+
+\defn{Equivalent expressions}{
+  Two expressions are \textbf{equivalent} if they have the same value whatever values are chosen for their variables. This is shown with an equals sign (some texts use $\equiv$). Either expression can be \textbf{rearranged} or \textbf{rewritten} to give the other. \textbf{Simplifying} an expression means rewriting it as a simpler equivalent expression.
+}
+
+Changing the order of the terms gives an equivalent expression, since the order of addition does not affect the result:
+\[ 4pq - 3q^{2} + 7p + 2\sqrt{q} - 9 = 7p - 9 + 2\sqrt{q} - 3q^{2} + 4pq. \]
+
+\subsubsection{Simplifying terms and expressions}
+
+\defn{Collecting like terms}{
+  Terms that differ only in their coefficients are \textbf{like terms}. They can be combined into a single term by adding their coefficients, which is called \textbf{collecting like terms}.
+}
+
+For example,
+\[ 4k - 7k + 10k = 7k, \qquad 2m^{2} + mn - 6m^{2} + 4mn = -4m^{2} + 5mn. \]
+Individual terms can also be simplified, for example $uv(-v) = -uv^{2}$.
+
+\prop{Strategy for simplifying a term}{
+  \begin{enumerate}[topsep=2pt, itemsep=2pt]
+    \item Find the overall sign and write it at the front.
+    \item Simplify the rest of the coefficient and write it next.
+    \item Write the remaining parts of the term in a sensible order, usually alphabetical, using index notation to avoid repeating letters.
+  \end{enumerate}
+}
+
+\prop{Sign rules}{
+  When multiplying or dividing, two signs the same give a plus sign and two different signs give a minus sign. Adding the negative of something is the same as subtracting it, and subtracting the negative of something is the same as adding it.
+}
+
+A plus or minus sign at the start of a term has the same effect as multiplying the term by $1$ or $-1$, so the sign rules apply to these signs too.
+
+\wex{tidying up individual terms}{
+  \begin{parts}
+    \item $+(-5k) = -5k$
+    \item $-(-3m) = 3m$
+    \item The overall sign is plus, the rest of the coefficient is $4 \times 5 = 20$, and $xy^{2} \times x^{3}y = x^{4}y^{3}$, so
+      \[ -4xy^{2} \times (-5x^{3}y) = 20x^{4}y^{3}. \]
+    \item There are three minus signs, so the overall sign is minus:
+      \[ -m \times n \times (-m) \times (-n) \times n = -m^{2}n^{3}. \]
+    \item $(3y)^{3} = (3y) \times (3y) \times (3y) = 27y^{3}$
+  \end{parts}
+}
+
+\prop{Index law for multiplication}{
+  For any natural numbers $m$ and $n$,
+  \[ a^{m} \times a^{n} = a^{m + n}. \]
+  For example, $a^{4} \times a^{2} = (a \times a \times a \times a) \times (a \times a) = a^{6}$.
+}
+
+\prop{Strategy for simplifying an expression with more than one term}{
+  \begin{enumerate}[topsep=2pt, itemsep=2pt]
+    \item Identify the terms. Each term after the first starts with a plus or minus sign that is not inside brackets.
+    \item Simplify each term, including the sign at its start (a plus sign on the first term can be dropped).
+    \item Collect like terms.
+  \end{enumerate}
+}
+
+\wex{simplifying a multi-term expression}{
+  \begin{align*}
+    \underbrace{4a \times 3b}\ \underbrace{-\,2a(-a)}\ \underbrace{-\,5a^{2}}
+      &= 12ab + 2a^{2} - 5a^{2} \\
+      &= 12ab - 3a^{2}
+  \end{align*}
+  This could also be written $-3a^{2} + 12ab$, but $12ab - 3a^{2}$ is slightly tidier.
+}
+
+\subsubsection{Expanding brackets}
+
+\defn{Expanding brackets}{
+  Rewriting an expression such as $2m(4 - 3n)$ as an expression without brackets is called \textbf{multiplying out}, \textbf{expanding} or \textbf{removing} the brackets. The result is the \textbf{expansion} of the original expression. The subexpression that multiplies the brackets, here $2m$, is the \textbf{multiplier}.
+}
+
+\prop{Strategy for multiplying out brackets}{
+  Multiply each term inside the brackets by the multiplier.
+}
+
+For example,
+\[ 2m(4 - 3n) = 2m \times 4 + 2m \times (-3n) = 8m - 6mn. \]
+Every term inside the brackets must be multiplied, not just the first. It is tidier to simplify each term mentally as it is multiplied out, rather than writing down the multiplication signs first. The multiplier can also come after the brackets, as in $(3k + 2)j = 3jk + 2j$.
+
+\wex{expanding a single pair of brackets}{
+  The terms of the expansion are $-3a \times a$, $-3a \times (-2b)$ and $-3a \times 4$, each simplified by finding the overall sign, then the coefficient, then the letters:
+  \[ -3a(a - 2b + 4) = -3a^{2} + 6ab - 12a. \]
+}
+
+\paragraph{Brackets preceded by a sign.}
+A minus sign in front of brackets is the same as multiplying by $-1$, and a plus sign is the same as multiplying by $1$.
+
+\prop{Strategy for removing brackets with a plus or minus sign in front}{
+  If the sign is plus, keep the sign of each term inside the brackets. If the sign is minus, change the sign of each term inside the brackets.
+}
+
+For example, $-(2m - n + 3k) = -2m + n - 3k$ and $+(x + 4y) = x + 4y$.
+
+\prop{Negative of a difference}{
+  For any expressions $A$ and $B$,
+  \[ -(A - B) = B - A. \]
+  For example, $-(p - q) = q - p$ and $-(2t - t^{3}) = t^{3} - 2t$.
+}
+
+\prop{Multiplying and dividing by an expression}{
+  Multiplying an expression with several terms by a second expression is the same as multiplying \emph{each term} of the first expression by the second. Dividing works in the same way, since dividing by $z$ is multiplying by $1/z$:
+  \[ \frac{x + 3y - 5}{z} = \frac{1}{z}(x + 3y - 5) = \frac{x}{z} + \frac{3y}{z} - \frac{5}{z}. \]
+}
+
+\paragraph{Expanding brackets within longer expressions.}
+
+\prop{Strategy for multiplying out brackets in an expression with more than one term}{
+  \begin{enumerate}[topsep=2pt, itemsep=2pt]
+    \item Identify the terms. Each term after the first starts with a plus or minus sign that is not inside brackets.
+    \item Multiply out the brackets in each term, including the sign at the start of each resulting term.
+    \item Collect like terms.
+  \end{enumerate}
+}
+
+\wex{expanding brackets in a longer expression}{
+  The expression has three terms, two of which contain brackets. Multiplying these out gives five terms, which are then collected.
+  \begin{align*}
+    \underbrace{3m(m - n)}\ \underbrace{+\,4mn}\ \underbrace{-\,n(2m + n)}
+      &= 3m^{2} - 3mn + 4mn - 2mn - n^{2} \\
+      &= 3m^{2} - mn - n^{2}
+  \end{align*}
+}
+
+\paragraph{Products of two pairs of brackets.}
+Choose one of the bracketed expressions to be the multiplier and multiply out the other pair of brackets. This gives several terms that each contain a pair of brackets, which are then multiplied out as usual. Either choice works, but taking the second pair as the multiplier is usually slightly easier.
+
+\wex{expanding a product of two brackets}{
+  Take $a + 3b$ as the multiplier.
+  \begin{align*}
+    (a + 2ab - b)(a + 3b)
+      &= a(a + 3b) + 2ab(a + 3b) - b(a + 3b) \\
+      &= a^{2} + 3ab + 2a^{2}b + 6ab^{2} - ab - 3b^{2} \\
+      &= a^{2} + 2ab + 2a^{2}b + 6ab^{2} - 3b^{2}
+  \end{align*}
+}
+
+The effect is that each term in the first pair of brackets is multiplied by each term in the second, and the results are added. Three terms multiplied by two terms gives $3 \times 2 = 6$ terms before like terms are collected.
+
+\prop{FOIL}{
+  When each pair of brackets contains two terms, there are four multiplications: the \textbf{F}irst terms, the \textbf{O}uter terms, the \textbf{I}nner terms and the \textbf{L}ast terms.
+}
+
+\wex{applying FOIL}{
+  For $(2y - 3)(y + 4)$:
+  \[ \text{F: } 2y \times y = 2y^{2}, \quad
+     \text{O: } 2y \times 4 = 8y, \quad
+     \text{I: } -3 \times y = -3y, \quad
+     \text{L: } -3 \times 4 = -12. \]
+  So
+  \[ (2y - 3)(y + 4) = 2y^{2} + 8y - 3y - 12 = 2y^{2} + 5y - 12. \]
+}
+
+\paragraph{A sum multiplied by a difference.}
+When the two pairs of brackets differ only in the sign between their terms, the outer and inner products add to zero. For example,
+\[ (y + 4)(y - 4) = y^{2} - 4y + 4y - 16 = y^{2} - 16. \]
+This always happens for an expression of the form $(A + B)(A - B)$.
+
+\prop{Difference of two squares}{
+  For any expressions $A$ and $B$,
+  \[ (A + B)(A - B) = A^{2} - B^{2}. \]
+  An expression of the form $A^{2} - B^{2}$ is called a \textbf{difference of two squares}.
+}
+
+\paragraph{Squaring a single pair of brackets.}
+Squared brackets can be multiplied out by writing them as two pairs of brackets multiplied together:
+\[ (y + 3)^{2} = (y + 3)(y + 3) = y^{2} + 3y + 3y + 9 = y^{2} + 6y + 9. \]
+Note that $(y + 3)^{2}$ is \emph{not} equal to $y^{2} + 3^{2}$.
+
+\prop{Squaring brackets}{
+  For any expressions $A$ and $B$,
+  \[ (A + B)^{2} = A^{2} + 2AB + B^{2}, \qquad (A - B)^{2} = A^{2} - 2AB + B^{2}. \]
+}
+
+\wex{squaring brackets in one step}{
+  \begin{parts}
+    \item The square of $2a$, plus twice the product of $2a$ and $b$, plus the square of $b$:
+      \[ (2a + b)^{2} = (2a)^{2} + 2 \times (2a) \times b + b^{2} = 4a^{2} + 4ab + b^{2}. \]
+    \item The square of $5k$, minus twice the product of $5k$ and $2$, plus the square of $2$:
+      \[ (5k - 2)^{2} = (5k)^{2} - 2 \times (5k) \times 2 + 2^{2} = 25k^{2} - 20k + 4. \]
+  \end{parts}
+}
+
+\paragraph{Choosing a simplest form.}
+A simpler form of an expression is shorter and easier to evaluate, so $y + 4y - 2y$ should be written as $3y$. Often there is no single simplest form. For example, $y(y - 2)$ and $y^{2} - 2y$ are both short and easy to evaluate, and one may suit a particular purpose better than the other. Multiplying out brackets does not always simplify an expression, so only do it when it makes the expression simpler or helps with the problem at hand.

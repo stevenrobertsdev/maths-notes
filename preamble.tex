@@ -1,0 +1,100 @@
+% Shared style for all maths notes. Loaded with \input{../preamble}.
+
+% ---------- Page and fonts ----------
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+% ---------- Maths ----------
+\usepackage{amsmath, amssymb, amsthm, mathrsfs}
+\usepackage{cancel}                         % strike-through for cancelling
+\usepackage{esvect}                         % proper arrow vectors
+\renewcommand{\vec}[1]{\vv{#1}}
+\newcommand{\sL}{\mathscr{L}}               % \sL(V, W): space of linear maps
+\DeclareMathOperator{\range}{range}
+\DeclareMathOperator{\Null}{null}
+\renewcommand{\qedsymbol}{$\odot$}
+
+% ---------- Lists for activities: (a), (b) and (i), (ii) ----------
+\usepackage{enumitem}
+\newlist{parts}{enumerate}{1}
+\setlist[parts,1]{label=(\alph*), leftmargin=*, topsep=2pt, itemsep=4pt}
+\newlist{subparts}{enumerate}{1}
+\setlist[subparts,1]{label=(\roman*), leftmargin=*, topsep=2pt, itemsep=4pt}
+
+% ---------- Boxes ----------
+\usepackage[most]{tcolorbox}
+\definecolor{navy}{RGB}{35,60,120}
+\definecolor{paleblue}{RGB}{236,242,250}
+\definecolor{palegreen}{RGB}{236,247,238}
+\definecolor{forest}{RGB}{30,110,60}
+\definecolor{crimson}{RGB}{200,35,35}
+\definecolor{plum}{RGB}{110,60,160}
+
+\tcbset{
+  barbox/.style 2 args={
+    enhanced, breakable, sharp corners, frame hidden, boxrule=0pt,
+    colback=#1, colbacktitle=#1, coltitle=#2,
+    borderline west={2pt}{0pt}{#2},
+    fonttitle=\bfseries, description font=\mdseries,
+    separator sign none, description delimiters none,
+    left=8pt, top=4pt, bottom=4pt,
+  }
+}
+
+\newtcbtheorem[number within=section]{proposition}{Proposition}
+  {enhanced, breakable, arc=4pt, boxrule=0.5pt,
+   colframe=plum!25, colback=plum!3,
+   coltitle=plum!85!black, fonttitle=\sffamily\bfseries\small,
+   description font=\sffamily\mdseries\small,
+   separator sign none, description delimiters none,
+   attach title to upper, after title={\par\smallskip},
+   top=8pt, bottom=8pt, left=10pt, right=10pt}{prop}
+\newtcbtheorem[use counter from=proposition]{theorem}{Theorem}
+  {barbox={palegreen}{forest}}{thm}
+\newtcbtheorem[use counter from=proposition]{definition}{Definition}
+  {enhanced, breakable, arc=4pt, boxrule=0.5pt,
+   colframe=crimson!25, colback=crimson!3,
+   coltitle=crimson!85!black, fonttitle=\sffamily\bfseries\small,
+   description font=\sffamily\mdseries\small,
+   separator sign none, description delimiters none,
+   attach title to upper, after title={\par\smallskip},
+   top=8pt, bottom=8pt, left=10pt, right=10pt}{def}
+
+\newtcolorbox{workedbox}[1]{
+  enhanced, breakable, arc=4pt, boxrule=0.5pt,
+  colframe=navy!25, colback=navy!3,
+  coltitle=navy!85!black, fonttitle=\sffamily\small,
+  title={\textbf{Working example}\ #1},
+  attach title to upper, after title={\par\smallskip},
+  top=8pt, bottom=8pt, left=10pt, right=10pt,
+}
+
+\newtcolorbox{activitybox}[1]{
+  enhanced, breakable, arc=4pt, boxrule=0.5pt,
+  colframe=forest!25, colback=forest!3,
+  coltitle=forest!85!black, fonttitle=\sffamily\small,
+  title={\textbf{Activity #1}},
+  attach title to upper, after title={\par\smallskip},
+  top=8pt, bottom=8pt, left=10pt, right=10pt,
+}
+
+\newtcolorbox{notebox}{
+  enhanced, breakable, sharp corners, colback=black!4, colframe=black!45,
+  boxrule=0.6pt, drop shadow, top=10pt,
+  attach boxed title to top left={xshift=6mm, yshift=-2.5mm},
+  boxed title style={colback=white, colframe=black!45, boxrule=0.5pt, sharp corners},
+  coltitle=black, fonttitle=\bfseries\small, title={Note:-},
+}
+
+% ---------- Short commands, as in the video ----------
+\newcommand{\prop}[2]{\begin{proposition}{#1}{}#2\end{proposition}}
+\newcommand{\thm}[2]{\begin{theorem}{#1}{}#2\end{theorem}}
+\newcommand{\defn}[2]{\begin{definition}{#1}{}#2\end{definition}}
+\newcommand{\nt}[1]{\begin{notebox}#1\end{notebox}}
+\newcommand{\pf}[2]{\begin{proof}[#1]#2\end{proof}}
+\newcommand{\wex}[2]{\begin{workedbox}{#1}#2\end{workedbox}}
+\newcommand{\act}[2]{\begin{activitybox}{#1}#2\end{activitybox}}
+
+% ---------- Links: clickable contents and PDF bookmarks (load last) ----------
+\usepackage[hidelinks]{hyperref}

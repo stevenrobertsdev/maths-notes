@@ -1,0 +1,10 @@
+{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  }
+}
